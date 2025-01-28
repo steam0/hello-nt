@@ -2,7 +2,7 @@
 resource "aws_amplify_app" "amplify_app" {
   name       = var.app_name
   repository = var.repository
-  oauth_token = var.token  
+  oauth_token = var.token
   iam_service_role_arn = aws_iam_role.amplify_role.arn
   platform = "WEB_COMPUTE"
 }
